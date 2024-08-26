@@ -8,21 +8,20 @@
 import SwiftUI
 
 struct DashboardView: View {
-    let expenses: [ExpenseOverview] = [
-        ExpenseOverview(expenseSummaryText: "You owe 100 dollars."),
-        ExpenseOverview(expenseSummaryText: "You owe 25 dollars."),
-        ExpenseOverview(expenseSummaryText: "Raju owes you 20 dollars."),
-    ]
-    
-    var body: some View {
-        NavigationView {
-            List(expenses) { expense in
-                    ExpenseStatusView(expense: expense)
-            }.navigationTitle("Dashboard")
-        }
+  let balances: [BalanceOverview] = [
+    BalanceOverview(amount: 100, isOwed: true, participant2: User(name: "Raju")),
+    BalanceOverview(amount: 80, isOwed: false, participant2: User(name: "Anjali"))
+  ]
+  
+  var body: some View {
+    NavigationView {
+      List(balances) { balance in
+        BalanceStatusView(balance: balance)
+      }.navigationTitle("Dashboard")
     }
+  }
 }
 
 #Preview {
-    DashboardView()
+  DashboardView()
 }

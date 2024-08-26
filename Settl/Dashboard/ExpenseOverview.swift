@@ -7,7 +7,16 @@
 
 import Foundation
 
-struct ExpenseOverview: Identifiable {
-    let id = UUID()
-    let expenseSummaryText: String
+struct BalanceOverview: Identifiable {
+  let id = UUID()
+  
+  let amount: Double
+  let isOwed: Bool
+  let participant2: User
+}
+
+struct User: Identifiable {
+  let id = UUID()
+  
+  let name: String
 }

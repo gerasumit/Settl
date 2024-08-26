@@ -7,14 +7,18 @@
 
 import SwiftUI
 
-struct ExpenseStatusView: View {
-    let expense: ExpenseOverview
-    
-    var body: some View {
-        Text(expense.expenseSummaryText)
+struct BalanceStatusView: View {
+  let balance: BalanceOverview
+  
+  var body: some View {
+    VStack {
+      Text(balance.isOwed ? "You owe \(balance.participant2.name)" : "\(balance.participant2.name) owes you")
+      Text(String(balance.amount))
+        .foregroundColor(balance.isOwed ? Color.red : Color.green)
     }
+  }
 }
 
 #Preview {
-    ExpenseStatusView(expense: ExpenseOverview(expenseSummaryText: "You owe me 100 dollars"))
+  BalanceStatusView(balance: BalanceOverview(amount: 100, isOwed: true, participant2: User(name: "Raju")))
 }
