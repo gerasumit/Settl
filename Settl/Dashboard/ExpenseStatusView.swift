@@ -11,10 +11,18 @@ struct BalanceStatusView: View {
   let balance: BalanceOverview
   
   var body: some View {
-    VStack {
-      Text(balance.isOwed ? "You owe \(balance.participant2.name)" : "\(balance.participant2.name) owes you")
-      Text(String(balance.amount))
-        .foregroundColor(balance.isOwed ? Color.red : Color.green)
+    HStack {
+      Text(balance.participant2.name)
+        .font(.title2)
+      VStack {
+        Text(String(balance.isOwed ? "you owe" : "owes you"))
+          .foregroundColor(balance.isOwed ? Color.red : Color.green)
+          .font(.callout)
+          .frame(maxWidth: .infinity, alignment: .trailing)
+        Text("₹ \(balance.amount)")
+          .foregroundColor(balance.isOwed ? Color.red : Color.green)
+          .frame(maxWidth: .infinity, alignment: .trailing)
+      }
     }
   }
 }
