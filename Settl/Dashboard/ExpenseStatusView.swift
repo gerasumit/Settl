@@ -30,3 +30,7 @@ struct BalanceStatusView: View {
 #Preview {
   BalanceStatusView(balance: BalanceOverview(amount: 100, isOwed: true, participant2: User(name: "Raju")))
 }
+
+enum Colors {
+  
+}

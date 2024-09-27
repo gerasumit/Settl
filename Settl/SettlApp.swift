@@ -11,7 +11,7 @@ import SwiftUI
 struct SettlApp: App {
     var body: some Scene {
         WindowGroup {
-            DashboardView()
+          OnboardingView()
         }
     }
 }

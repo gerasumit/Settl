@@ -15,8 +15,12 @@ struct DashboardView: View {
   
   var body: some View {
     NavigationView {
-      List(balances) { balance in
-        BalanceStatusView(balance: balance)
+      ZStack {
+        Color.white.edgesIgnoringSafeArea(.all)
+        
+        List(balances) { balance in
+          BalanceStatusView(balance: balance)
+        }.listStyle(.plain)
       }.navigationTitle("Dashboard")
     }
   }

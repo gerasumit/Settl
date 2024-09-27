@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1012CC482CA6B8A700A2E180 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */; };
+		108009422C935D650082C727 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009412C935D650082C727 /* OnboardingView.swift */; };
+		108009452C9361B70082C727 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009442C9361B70082C727 /* Colors.swift */; };
+		108009472C936B560082C727 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009462C936B560082C727 /* PrimaryButton.swift */; };
 		10974FF32C7CF4C900D9AFBD /* SettlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10974FF22C7CF4C900D9AFBD /* SettlApp.swift */; };
 		10974FF72C7CF4CA00D9AFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10974FF62C7CF4CA00D9AFBD /* Assets.xcassets */; };
 		10974FFA2C7CF4CA00D9AFBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10974FF92C7CF4CA00D9AFBD /* Preview Assets.xcassets */; };
@@ -16,6 +20,11 @@
 		109750222C7CF61B00D9AFBD /* DashboardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750212C7CF61B00D9AFBD /* DashboardView.swift */; };
 		109750242C7CFA1100D9AFBD /* ExpenseStatusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750232C7CFA1100D9AFBD /* ExpenseStatusView.swift */; };
 		109750262C7CFA4400D9AFBD /* ExpenseOverview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750252C7CFA4400D9AFBD /* ExpenseOverview.swift */; };
+		1097502A2C83855A00D9AFBD /* TabbedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750292C83855A00D9AFBD /* TabbedView.swift */; };
+		1097502E2C83877D00D9AFBD /* AddExpenseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1097502D2C83877D00D9AFBD /* AddExpenseView.swift */; };
+		109750312C8387EC00D9AFBD /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750302C8387EC00D9AFBD /* ActivityView.swift */; };
+		109750342C83881700D9AFBD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750332C83881700D9AFBD /* AccountView.swift */; };
+		109750372C83886800D9AFBD /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750362C83886800D9AFBD /* GroupsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +45,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
+		108009412C935D650082C727 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		108009442C9361B70082C727 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		108009462C936B560082C727 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		10974FEF2C7CF4C900D9AFBD /* Settl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10974FF22C7CF4C900D9AFBD /* SettlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlApp.swift; sourceTree = "<group>"; };
 		10974FF62C7CF4CA00D9AFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +61,12 @@
 		109750212C7CF61B00D9AFBD /* DashboardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardView.swift; sourceTree = "<group>"; };
 		109750232C7CFA1100D9AFBD /* ExpenseStatusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseStatusView.swift; sourceTree = "<group>"; };
 		109750252C7CFA4400D9AFBD /* ExpenseOverview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpenseOverview.swift; sourceTree = "<group>"; };
+		109750272C7ED8A400D9AFBD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		109750292C83855A00D9AFBD /* TabbedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbedView.swift; sourceTree = "<group>"; };
+		1097502D2C83877D00D9AFBD /* AddExpenseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddExpenseView.swift; sourceTree = "<group>"; };
+		109750302C8387EC00D9AFBD /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
+		109750332C83881700D9AFBD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
+		109750362C83886800D9AFBD /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +94,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		108009402C935D3E0082C727 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				108009412C935D650082C727 /* OnboardingView.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		108009432C9361A90082C727 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				108009442C9361B70082C727 /* Colors.swift */,
+				108009462C936B560082C727 /* PrimaryButton.swift */,
+				1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 		10974FE62C7CF4C900D9AFBD = {
 			isa = PBXGroup;
 			children = (
@@ -98,7 +135,15 @@
 		10974FF12C7CF4C900D9AFBD /* Settl */ = {
 			isa = PBXGroup;
 			children = (
+				108009432C9361A90082C727 /* Utils */,
+				108009402C935D3E0082C727 /* Onboarding */,
+				109750272C7ED8A400D9AFBD /* Info.plist */,
+				109750352C83885500D9AFBD /* Groups */,
+				109750322C83880A00D9AFBD /* Account */,
+				1097502F2C8387DA00D9AFBD /* Activity */,
+				1097502C2C83876A00D9AFBD /* AddExpense */,
 				10974FF22C7CF4C900D9AFBD /* SettlApp.swift */,
+				109750282C83853800D9AFBD /* Tab */,
 				1097501C2C7CF4E200D9AFBD /* Dashboard */,
 				10974FF62C7CF4CA00D9AFBD /* Assets.xcassets */,
 				10974FF82C7CF4CA00D9AFBD /* Preview Content */,
@@ -139,6 +184,46 @@
 				109750252C7CFA4400D9AFBD /* ExpenseOverview.swift */,
 			);
 			path = Dashboard;
+			sourceTree = "<group>";
+		};
+		109750282C83853800D9AFBD /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				109750292C83855A00D9AFBD /* TabbedView.swift */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		1097502C2C83876A00D9AFBD /* AddExpense */ = {
+			isa = PBXGroup;
+			children = (
+				1097502D2C83877D00D9AFBD /* AddExpenseView.swift */,
+			);
+			path = AddExpense;
+			sourceTree = "<group>";
+		};
+		1097502F2C8387DA00D9AFBD /* Activity */ = {
+			isa = PBXGroup;
+			children = (
+				109750302C8387EC00D9AFBD /* ActivityView.swift */,
+			);
+			path = Activity;
+			sourceTree = "<group>";
+		};
+		109750322C83880A00D9AFBD /* Account */ = {
+			isa = PBXGroup;
+			children = (
+				109750332C83881700D9AFBD /* AccountView.swift */,
+			);
+			path = Account;
+			sourceTree = "<group>";
+		};
+		109750352C83885500D9AFBD /* Groups */ = {
+			isa = PBXGroup;
+			children = (
+				109750362C83886800D9AFBD /* GroupsView.swift */,
+			);
+			path = Groups;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -271,8 +356,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				109750372C83886800D9AFBD /* GroupsView.swift in Sources */,
+				108009452C9361B70082C727 /* Colors.swift in Sources */,
 				109750222C7CF61B00D9AFBD /* DashboardView.swift in Sources */,
+				1097502A2C83855A00D9AFBD /* TabbedView.swift in Sources */,
+				108009422C935D650082C727 /* OnboardingView.swift in Sources */,
 				109750242C7CFA1100D9AFBD /* ExpenseStatusView.swift in Sources */,
+				1012CC482CA6B8A700A2E180 /* SecondaryButton.swift in Sources */,
+				108009472C936B560082C727 /* PrimaryButton.swift in Sources */,
+				1097502E2C83877D00D9AFBD /* AddExpenseView.swift in Sources */,
+				109750342C83881700D9AFBD /* AccountView.swift in Sources */,
+				109750312C8387EC00D9AFBD /* ActivityView.swift in Sources */,
 				10974FF32C7CF4C900D9AFBD /* SettlApp.swift in Sources */,
 				109750262C7CFA4400D9AFBD /* ExpenseOverview.swift in Sources */,
 			);
@@ -438,8 +532,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Settl/Preview Content\"";
+				DEVELOPMENT_TEAM = 9U4RLLUG36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Settl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -466,8 +562,10 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Settl/Preview Content\"";
+				DEVELOPMENT_TEAM = 9U4RLLUG36;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Settl/Info.plist;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
