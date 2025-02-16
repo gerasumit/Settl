@@ -7,10 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1012CC482CA6B8A700A2E180 /* SecondaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */; };
 		108009422C935D650082C727 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009412C935D650082C727 /* OnboardingView.swift */; };
 		108009452C9361B70082C727 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009442C9361B70082C727 /* Colors.swift */; };
-		108009472C936B560082C727 /* PrimaryButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 108009462C936B560082C727 /* PrimaryButton.swift */; };
 		10974FF32C7CF4C900D9AFBD /* SettlApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10974FF22C7CF4C900D9AFBD /* SettlApp.swift */; };
 		10974FF72C7CF4CA00D9AFBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10974FF62C7CF4CA00D9AFBD /* Assets.xcassets */; };
 		10974FFA2C7CF4CA00D9AFBD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10974FF92C7CF4CA00D9AFBD /* Preview Assets.xcassets */; };
@@ -25,6 +23,7 @@
 		109750312C8387EC00D9AFBD /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750302C8387EC00D9AFBD /* ActivityView.swift */; };
 		109750342C83881700D9AFBD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750332C83881700D9AFBD /* AccountView.swift */; };
 		109750372C83886800D9AFBD /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750362C83886800D9AFBD /* GroupsView.swift */; };
+		1B4A705C2D62264900987E6D /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A705B2D62264000987E6D /* ButtonModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,10 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondaryButton.swift; sourceTree = "<group>"; };
 		108009412C935D650082C727 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		108009442C9361B70082C727 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
-		108009462C936B560082C727 /* PrimaryButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButton.swift; sourceTree = "<group>"; };
 		10974FEF2C7CF4C900D9AFBD /* Settl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Settl.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10974FF22C7CF4C900D9AFBD /* SettlApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettlApp.swift; sourceTree = "<group>"; };
 		10974FF62C7CF4CA00D9AFBD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -67,6 +64,7 @@
 		109750302C8387EC00D9AFBD /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityView.swift; sourceTree = "<group>"; };
 		109750332C83881700D9AFBD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		109750362C83886800D9AFBD /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
+		1B4A705B2D62264000987E6D /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,9 +103,8 @@
 		108009432C9361A90082C727 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				1B4A705B2D62264000987E6D /* ButtonModifier.swift */,
 				108009442C9361B70082C727 /* Colors.swift */,
-				108009462C936B560082C727 /* PrimaryButton.swift */,
-				1012CC472CA6B8A700A2E180 /* SecondaryButton.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -362,8 +359,7 @@
 				1097502A2C83855A00D9AFBD /* TabbedView.swift in Sources */,
 				108009422C935D650082C727 /* OnboardingView.swift in Sources */,
 				109750242C7CFA1100D9AFBD /* ExpenseStatusView.swift in Sources */,
-				1012CC482CA6B8A700A2E180 /* SecondaryButton.swift in Sources */,
-				108009472C936B560082C727 /* PrimaryButton.swift in Sources */,
+				1B4A705C2D62264900987E6D /* ButtonModifier.swift in Sources */,
 				1097502E2C83877D00D9AFBD /* AddExpenseView.swift in Sources */,
 				109750342C83881700D9AFBD /* AccountView.swift in Sources */,
 				109750312C8387EC00D9AFBD /* ActivityView.swift in Sources */,

@@ -7,36 +7,56 @@
 
 import SwiftUI
 
+enum Flow: Decodable, Hashable {
+  case login
+  case register
+}
+
 struct OnboardingView: View {
-  @State private var isDashboardVisible = false
+  @State private var path = NavigationPath()
+  
   var body: some View {
-    VStack(spacing: 0) {
+    NavigationStack(path: $path) {
+      VStack(spacing: 0) {
+        onboardingHeader()
+        Spacer()
+        onboardingFooter()
+      }.padding(.top, 80)
+    }
+  }
+}
+
+fileprivate extension OnboardingView {
+  func onboardingHeader() -> some View {
+    return VStack(spacing: 16) {
       Text("Manage your daily expenses everyday")
         .font(.title)
         .bold()
       
-      Spacer().frame(height: 16)
-      
       Text("Manage your daily expenses")
         .font(.callout)
+    }
+  }
+  
+  func onboardingFooter() -> some View {
+    return VStack {
+      Button("Login with Phone") {
+          path.append(Flow.login)
+        }
+          .primaryButton()
+          .padding(.bottom, 16)
       
-      Spacer()
-      
-      VStack {
-        PrimaryButton(title: "Login with Phone", action: {
-          isDashboardVisible = true
-        }).padding(.bottom, 16)
-        
-        SecondaryButton(title: "Create account", action: {})
+      Button("Create account") {
+        path.append(Flow.register)
       }
-      
-      NavigationLink(destination: DashboardView(), isActive: $isDashboardVisible) {
-        EmptyView()
-      }
-      
-    }.padding(EdgeInsets(top: 80, leading: 0, bottom: 0, trailing: 0))
+        .secondaryButton()
+    }
+    .navigationDestination(for: Flow.self) { value in
+      // TODO: Handle login & register action
+    }
   }
 }
+
 
 #Preview {
   OnboardingView()
