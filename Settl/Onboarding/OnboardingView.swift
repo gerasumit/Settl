@@ -5,6 +5,8 @@
 //  Created by Sumit Gera on 12/09/24.
 //
 
+import GoogleSignIn
+import GoogleSignInSwift
 import SwiftUI
 
 enum Flow: Decodable, Hashable {
@@ -40,11 +42,9 @@ fileprivate extension OnboardingView {
   
   func onboardingFooter() -> some View {
     return VStack {
-      Button("Login with Phone") {
-          path.append(Flow.login)
-        }
-          .primaryButton()
-          .padding(.bottom, 16)
+      Button("Sign In with Google", action: handleGoogleSignIn)
+        .primaryButton()
+        .padding(.bottom, 16)
       
       Button("Create account") {
         path.append(Flow.register)
@@ -53,6 +53,14 @@ fileprivate extension OnboardingView {
     }
     .navigationDestination(for: Flow.self) { value in
       // TODO: Handle login & register action
+    }
+  }
+  
+  func handleGoogleSignIn() {
+    guard let vc =  UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first?.keyWindow?.rootViewController else { return }
+    GIDSignIn.sharedInstance.signIn(withPresenting: vc) { result, error in
+      guard let result = result else { return }
+      print("Google Sign In Result: \(result)")
     }
   }
 }

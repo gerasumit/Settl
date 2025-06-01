@@ -39,6 +39,12 @@ struct SecondaryButtonModifier: ViewModifier {
   }
 }
 
+extension View {
+  func primaryButton() -> some View {
+    modifier(PrimaryButtonModifier())
+  }
+}
+
 extension Button {
   func primaryButton() -> some View {
     modifier(PrimaryButtonModifier())
@@ -47,4 +53,62 @@ extension Button {
   func secondaryButton() -> some View {
     modifier(SecondaryButtonModifier())
   }
+}
+
+func removeLast<T>(_ array: inout [T]) -> T {
+  let lastElem = array[array.count - 1]
+  array.remove(at: array.count - 1)
+  return lastElem
+}
+
+func getHashValue<T: Hashable>(_ t: T) -> Int {
+  return t.hashValue
+}
+
+func functionX<T: Decodable>(_ t: T, tType: T.Type) {
+  print(T.self)
+}
+
+class ListNode<NodeValue: Equatable> {
+  private let value: NodeValue
+
+  init(value: NodeValue) {
+    self.value = value
+  }
+}
+
+class ListNode2<NodeValue: Collection> where NodeValue.Element: Equatable {
+  private let value: NodeValue
+
+  init(value: NodeValue) {
+    self.value = value
+  }
+}
+
+class ListNode3<NodeValue: Collection<Decodable>> {
+  private let value: NodeValue
+
+  init(value: NodeValue) {
+    self.value = value
+  }
+}
+
+protocol Container {
+  associatedtype Item
+  func addItem(_ item: Item)
+  func removeItem(_ item: Item)
+}
+
+protocol Container2<Item> {
+  associatedtype Item
+  func addItem(_ item: Item)
+  func removeItem(_ item: Item)
+}
+
+func parse(_ container: any Container2<Int>) {
+  
+}
+
+func parse2<C: Container>(_ container: C) where C.Item == Int {
+  
 }
