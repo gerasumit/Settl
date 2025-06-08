@@ -24,6 +24,8 @@
 		109750342C83881700D9AFBD /* AccountView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750332C83881700D9AFBD /* AccountView.swift */; };
 		109750372C83886800D9AFBD /* GroupsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 109750362C83886800D9AFBD /* GroupsView.swift */; };
 		1B4A705C2D62264900987E6D /* ButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B4A705B2D62264000987E6D /* ButtonModifier.swift */; };
+		1B7230C42DF4308900BF1438 /* LoginService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7230C32DF4308100BF1438 /* LoginService.swift */; };
+		1B7230C62DF432B300BF1438 /* OnboardingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1B7230C52DF432AE00BF1438 /* OnboardingViewModel.swift */; };
 		1B76B4D22DEB8934001A6C1E /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 1B76B4D12DEB8934001A6C1E /* GoogleSignIn */; };
 		1B76B4D42DEB8934001A6C1E /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 1B76B4D32DEB8934001A6C1E /* GoogleSignInSwift */; };
 /* End PBXBuildFile section */
@@ -67,6 +69,8 @@
 		109750332C83881700D9AFBD /* AccountView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountView.swift; sourceTree = "<group>"; };
 		109750362C83886800D9AFBD /* GroupsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GroupsView.swift; sourceTree = "<group>"; };
 		1B4A705B2D62264000987E6D /* ButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonModifier.swift; sourceTree = "<group>"; };
+		1B7230C32DF4308100BF1438 /* LoginService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginService.swift; sourceTree = "<group>"; };
+		1B7230C52DF432AE00BF1438 /* OnboardingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,8 @@
 			isa = PBXGroup;
 			children = (
 				108009412C935D650082C727 /* OnboardingView.swift */,
+				1B7230C52DF432AE00BF1438 /* OnboardingViewModel.swift */,
+				1B7230C32DF4308100BF1438 /* LoginService.swift */,
 			);
 			path = Onboarding;
 			sourceTree = "<group>";
@@ -363,9 +369,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				109750372C83886800D9AFBD /* GroupsView.swift in Sources */,
+				1B7230C42DF4308900BF1438 /* LoginService.swift in Sources */,
 				108009452C9361B70082C727 /* Colors.swift in Sources */,
 				109750222C7CF61B00D9AFBD /* DashboardView.swift in Sources */,
 				1097502A2C83855A00D9AFBD /* TabbedView.swift in Sources */,
+				1B7230C62DF432B300BF1438 /* OnboardingViewModel.swift in Sources */,
 				108009422C935D650082C727 /* OnboardingView.swift in Sources */,
 				109750242C7CFA1100D9AFBD /* ExpenseStatusView.swift in Sources */,
 				1B4A705C2D62264900987E6D /* ButtonModifier.swift in Sources */,

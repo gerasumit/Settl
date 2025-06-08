@@ -12,7 +12,7 @@ import GoogleSignIn
 struct SettlApp: App {
     var body: some Scene {
         WindowGroup {
-          OnboardingView()
+          OnboardingView(viewModel: OnboardingViewModel())
             .onOpenURL { url in
               GIDSignIn.sharedInstance.handle(url)
             }

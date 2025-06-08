@@ -21,7 +21,7 @@ struct TabbedView: View {
   var body: some View {
     ZStack(alignment: .bottom) {
       TabView {
-        OnboardingView()
+        OnboardingView(viewModel: OnboardingViewModel())
         GroupsView()
         AddExpenseView()
         ActivityView()

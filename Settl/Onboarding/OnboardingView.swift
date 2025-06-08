@@ -8,6 +8,8 @@
 import GoogleSignIn
 import GoogleSignInSwift
 import SwiftUI
+import JavaScriptCore
+import Combine
 
 enum Flow: Decodable, Hashable {
   case login
@@ -16,6 +18,7 @@ enum Flow: Decodable, Hashable {
 
 struct OnboardingView: View {
   @State private var path = NavigationPath()
+  @ObservedObject var viewModel: OnboardingViewModel
   
   var body: some View {
     NavigationStack(path: $path) {
@@ -59,13 +62,16 @@ fileprivate extension OnboardingView {
   func handleGoogleSignIn() {
     guard let vc =  UIApplication.shared.connectedScenes.compactMap({ $0 as? UIWindowScene }).first?.keyWindow?.rootViewController else { return }
     GIDSignIn.sharedInstance.signIn(withPresenting: vc) { result, error in
-      guard let result = result else { return }
-      print("Google Sign In Result: \(result)")
+      guard let result = result, let email = result.user.profile?.email, !email.isEmpty, let idToken = result.user.idToken?.tokenString, let expirationDate = result.user.idToken?.expirationDate else { return }
+      viewModel.login(
+        email: email,
+        idToken: idToken,
+        expirationDate: expirationDate)
     }
   }
 }
 
 
 #Preview {
-  OnboardingView()
+  OnboardingView(viewModel: OnboardingViewModel())
 }
